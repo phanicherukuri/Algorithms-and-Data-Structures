@@ -1,2 +1,2 @@
 # Java-DataStructures
-Implementing DataStructures
+Algorithms and Data Structures
