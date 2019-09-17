@@ -29,9 +29,9 @@ public class OneAway {
 			return oneEditReplace(s1, s2);
 		
 		if (s1.length() > s2.length())
-			return oneEditInsert(s1, s2);
+			return oneEditInsertRemove(s1, s2);
 		else
-			return oneEditInsert(s2, s1);
+			return oneEditInsertRemove(s2, s1);
 
 	}
 
@@ -48,7 +48,7 @@ public class OneAway {
 		return true;
 	}
 
-	private static boolean oneEditInsert(String s1, String s2) {
+	private static boolean oneEditInsertRemove(String s1, String s2) {
 		int i = 0;
 		int j = 0;
 		while (i < s1.length() && j < s2.length()) {
